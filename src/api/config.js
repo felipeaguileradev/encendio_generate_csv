@@ -13,7 +13,7 @@ const generateXlsx = (data, path) => {
 };
 
 export const getData = async (path, setLoading) => {
-  const baseURL = `http://146.83.216.251/api/csv/game/${path}`;
+  const baseURL = `//146.83.216.251/api/csv/game/${path}`;
 
   const config = {
     method: "GET",
