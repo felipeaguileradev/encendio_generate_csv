@@ -13,15 +13,15 @@ const generateXlsx = (data, path) => {
 };
 
 export const getData = async (path, setLoading) => {
-  // const baseURL = `http//146.83.216.251/api/csv/game/${path}`;
-  const baseURL = `/api/${path}`;
+  const baseURL = `http//146.83.216.251/api/csv/game/${path}`;
+  // const baseURL = `/api/${path}`;
 
   const config = {
     method: "GET",
     maxBodyLength: Infinity,
     url: baseURL,
     headers: { "Content-Type": "application/json" },
-    timeout: 20000,
+    timeout: 40000,
   };
 
   try {
